@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  background: #673377;
+	border: 2px solid #000;
+  border-radius: 10px;
+	margin-top:3em;
+	margin-bottom:3em;
+}
+
+h1 {
+  font-weight: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.header h3 {
+  font-size: 200%;
+}
+
+.header div {
+  height: 52px;
+}
+
+.chats {
+  background: #111111;
+  scroll-snap-type: y proximity;
+}
+
+.chatline:last-child {
+  scroll-snap-align: end;
+}
+
+.sectiontitle {
+  margin-top: 15px;
+	margin-left:15px;
+}
+
+.rolled,
+.chats {
+  font-size: 90%;
+  height: 400px;
+  max-width: 96%;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow-y: auto;
+  bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rolleduser,
+.chats {
+  border-radius: 10px;
+}
+
+.chatline,
+.chatline p,
+.rolleduser,
+.rolleduser p {
+  line-height: 125%;
+	font-size:105%;
+  margin: 0;
+  padding: 2px;
+}
+
+.chatline-brighter {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chatline p {
+  align-items: center;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+
+.rolleduser {
+  background: #111111;
+}
+
+.rolleduser p {
+  display: flex;
+  align-items: center;
+}
+
+.rolledtext {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.rolleduser .removebtn {
+  float: right;
+}
+
+.pickedpeeps {
+  background: #ffffff;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+	padding-left:1em;
+}
+
+.keyword-input {
+  background: #111111;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.keyword-text {
+  border: 2px solid white;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.kw {
+  font-size: 100%;
+}
+
+.kw span:first-of-type {
+  vertical-align: middle;
+  font-size: 150%;
+  font-weight: 600;
+  color: #c000ff;
+  background: #000;
+  padding: 2px 5px;
+}
+
+.input-group-text,
+.btn,
+.form-control {
+  font-size: 100% !important;
+}
+
+.btn-secondary, .input-group-text {
+	background-color:#19FFA1 !important;
+	color:#000 !important;
+	border-color:#19FFA1;
+}
+
+.form-control {
+	border:none;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+		background:#000;
+  }
+  .container {
+    max-width: 100%;
+		border:none;
+		background:#000;
+		margin:none;
+  }
+	.keyword-input, .header, .chats, .maincontent {
+		padding-left:2em;
+		padding-right:2em;
+	}
+
+	.pickedpeeps {
+		padding-left:3em;
+		padding-right:2em;
+	}
+}
